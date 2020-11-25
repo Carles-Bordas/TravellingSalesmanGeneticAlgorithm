@@ -33,4 +33,19 @@ public class SimpleCity implements City {
         return location.distanceTo(other.getLocation());
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (!(o instanceof SimpleCity)) {
+            return false;
+        }
+
+        City toCompare = (SimpleCity) o;
+
+        if (!toCompare.getName().equals(this.name) || toCompare.getLocation().equals(this.location)) {
+            return false;
+        }
+
+        return true;
+    }
+
 }
