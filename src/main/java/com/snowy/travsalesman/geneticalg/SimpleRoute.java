@@ -47,4 +47,8 @@ public class SimpleRoute implements Route {
         return cities.get(0);
     }
 
+    @Override
+    public List getCities() {
+        return this.cities;
+    }
 }

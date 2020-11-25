@@ -1,5 +1,7 @@
 package com.snowy.travsalesman.geneticalg;
 
+import java.util.List;
+
 public interface Route extends Iterable<City> {
     public Route clone();
 
@@ -10,4 +12,6 @@ public interface Route extends Iterable<City> {
     public double totalDistance(); // Distance between all cities
 
     public City getInitialCity();
+
+    public List getCities();
 }
