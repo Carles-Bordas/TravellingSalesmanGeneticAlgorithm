@@ -48,4 +48,9 @@ public class SimpleCity implements City {
         return true;
     }
 
+    @Override
+    public int hashCode() {
+        return this.name.hashCode() + this.location.hashCode();
+    }
+
 }
