@@ -51,4 +51,25 @@ public class SimpleRoute implements Route {
     public List getCities() {
         return this.cities;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (!(o instanceof SimpleRoute)) {
+            return false;
+        }
+
+        Route toCompare = (SimpleRoute) o;
+
+        if (!toCompare.getCities().equals(this.cities)) {
+            return false;
+        }
+
+        return true;
+    }
+
+    @Override
+    public int hashCode() {
+        return cities.hashCode();
+    }
+
 }
