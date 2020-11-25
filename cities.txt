@@ -1,0 +1,4 @@
+madrid 0 0
+barcelona 1 0
+malaga 2 2
+brasilia 5 5
