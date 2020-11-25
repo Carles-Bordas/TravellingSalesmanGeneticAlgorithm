@@ -4,6 +4,11 @@ public class SimpleCity implements City {
     private String name;
     private Vector2 location;
 
+    public SimpleCity(String name, Vector2 location) {
+        this.name = name;
+        this.location = location;
+    }
+
     /**
      * Returns the name of the city
      */
